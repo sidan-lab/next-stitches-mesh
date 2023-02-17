@@ -26,6 +26,10 @@
 - Responsive: Always use mobile version as default, responsive on tablet or desktop width
 - Responsive: It is always preferred to adopt tailwind-like utils functions to handle responsive UI at `@src/styles/tokens/utils`. If that CSS element is none existing yet, create one to proceed.
 
+## Cardano Transactions
+
+- All Cardano transactions would be built inside `@src/mesh`, which take `BrowserWallet` and other required information as parameters, and returning a `signedTx`. This design is for pending signed transaction for further checking before sending to the network.
+
 # nextjs-boilerplate
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
