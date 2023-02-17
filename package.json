@@ -10,6 +10,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@meshsdk/core": "^1.5.0",
+    "@meshsdk/react": "^1.1.5",
     "@next/font": "13.1.6",
     "@reduxjs/toolkit": "^1.9.2",
     "@stitches/react": "^1.2.8",

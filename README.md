@@ -1,3 +1,33 @@
+# Next-Stitches-Mesh Boilerplate
+
+- This is a NextJs 13 boilerplate, for guide or specs requirement please refer to the bottom of README.
+
+# Collaboration Convention
+
+## General Convention
+
+- Functional Components: Prefer functional components over class-based components for all. Default exporting each component in a separate file (using snippet of `rafce`)
+- Functions: Prefer arrow functions over other declaration alternatives.
+
+## Static Content
+
+- Iterative Content: All iterative content (those would pass in `map` function) should be stored in `@src/assets/StaticContent`
+- Non Iterative Content: Can either be stored in `@src/assets/StaticContent` or hardcoded inside each components.
+
+## UI Component Variants
+
+- Util Variants: All repeated usable variants against wide range of components are constructed and exported in `@src/components/style`
+- Standardized Variants: Only standardized variants (use more than once)
+- Non Standardized Variants: Variants which would be used only once should be declared at the beginning inside each functional components.
+
+## Styles
+
+- Vertical Margin / Padding: Always prefer using `top` against `bottom`
+- Responsive: Always use mobile version as default, responsive on tablet or desktop width
+- Responsive: It is always preferred to adopt tailwind-like utils functions to handle responsive UI at `@src/styles/tokens/utils`. If that CSS element is none existing yet, create one to proceed.
+
+# nextjs-boilerplate
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

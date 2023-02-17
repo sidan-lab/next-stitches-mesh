@@ -13,13 +13,7 @@ const themes = {
     meshColor1: '#f8fadb',
     meshColor2: '#cce8b5',
     meshColor3: '#cce8b5',
-    meshColor4: '#f8fadb',
-    cardBackground: 'rgba(16, 24, 40, 14%)',
-    cardNotFocusedBg: 'rgba(16, 24, 40, 5%)',
-    cardDot: '#808E8D',
-    little: '#8F9194',
-    communityCardBg: '#FFFFFF',
-    socialMediaCardBg: 'rgba(129, 129, 129, 14%)'
+    meshColor4: '#f8fadb'
   },
   dark: {
     primary: '#38A598',
@@ -33,13 +27,7 @@ const themes = {
     meshColor1: '#232323',
     meshColor2: '#004d65',
     meshColor3: '#232323',
-    meshColor4: '#232323',
-    cardBackground: 'rgba(#646161, 51%)',
-    cardNotFocusedBg: 'rgba(#646161, 51%)',
-    cardDot: '#808E8D',
-    little: '#8F9194',
-    communityCardBg: '#CDCDCD',
-    socialMediaCardBg: 'rgba(255, 255, 255, 14%)'
+    meshColor4: '#232323'
   }
 }
 
@@ -47,9 +35,6 @@ const makePalette = (theme: ThemeTypes) => {
   const palette = themes[theme]
 
   const base = {
-    communityComment: '#3E3E3E',
-    communityCommentLight: '#8A8A8A',
-
     white: '#FFFFFF',
     gray100: 'hsl(206, 20%, 98.8%)',
     gray200: 'hsl(206, 14%, 96.0%)',
