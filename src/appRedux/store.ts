@@ -1,6 +1,5 @@
-import config from '@src/config'
-// import epics from '@src/epics'
-import reducers from '@src/reducers'
+import config from '@redux/config'
+import reducers from '@redux/features'
 import { configureStore } from '@reduxjs/toolkit'
 import { persistReducer, persistStore, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from 'redux-persist'
 import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
@@ -32,3 +31,8 @@ const persistor = persistStore(store)
 
 export default store
 export { persistor }
+
+// Infer the `RootState` and `AppDispatch` types from the store itself
+export type RootState = ReturnType<typeof store.getState>
+// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+export type AppDispatch = typeof store.dispatch

@@ -1,16 +1,19 @@
-import { createStitches } from '@stitches/react'
 import type * as Stitches from '@stitches/react'
+import { createStitches, defaultThemeMap } from '@stitches/react'
 import {
+  backgroundImages,
+  borderRadius,
   colors,
+  filters,
   fonts,
-  borders,
-  sizes,
+  medias,
+  opacities,
   shadows,
+  sizes,
   spacings,
   transitions,
-  zIndices,
   utils,
-  medias
+  zIndices
 } from './tokens'
 export type ThemeTypes = 'dark' | 'light'
 export type CreateThemeProps = ReturnType<typeof createTheme>
@@ -27,6 +30,12 @@ export const {
   theme: stitchesTheme,
   keyframes
 } = createStitches({
+  themeMap: {
+    ...defaultThemeMap,
+    opacity: 'opacities',
+    backgroundImage: 'backgroundImage',
+    borderStyle: 'borderStyle'
+  },
   theme: {
     borderStyles: {},
     borderWidths: {},
@@ -36,12 +45,15 @@ export const {
     fontWeights: { ...fonts.weights },
     letterSpacings: { ...fonts.letterSpacings },
     lineHeights: { ...fonts.lineHeights },
-    radii: { ...borders },
+    radii: { ...borderRadius },
     shadows: { ...shadows },
     sizes: { ...sizes },
     space: { ...spacings },
     transitions: { ...transitions },
-    zIndices: { ...zIndices }
+    opacities: { ...opacities },
+    zIndices: { ...zIndices },
+    filters: { ...filters },
+    backgroundImage: { ...backgroundImages }
   },
   utils: { ...utils },
   media: { ...medias }

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { CardanoWallet, useWallet } from '@meshsdk/react'
-import { gettingStartedTx } from '@src/mesh'
+import { gettingStartedTx } from '@src/cardano/mesh'
 
 export default function Home() {
   return (

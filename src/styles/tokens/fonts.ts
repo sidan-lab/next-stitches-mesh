@@ -1,9 +1,6 @@
 const families = {
-  heading: 'Roboto,sans-serif',
-  subHeading: 'Chakra Petch',
-  description: 'Manrope,sans-serif',
-  body: 'Epilogue, sans-serif',
-  code: 'Epilogue, sans-serif'
+  primary: 'Poppins, sans-serif',
+  secondary: 'Inter, sans-serif'
 }
 
 const sizes = {

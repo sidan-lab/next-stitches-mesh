@@ -2,32 +2,43 @@ import { ThemeTypes } from '../stitches.config'
 
 const themes = {
   light: {
-    primary: '#38A598',
-    textOnPrimary: '#FFFFFF',
-    hoverLight: '#424a5a',
-    textPrimary: '#3E3E3E',
-    textSecondary: '#FB8450',
-    textTertiary: '#101828',
-    iconPrimary: '#000000',
-    iconSecondary: '#0D0D0D',
-    meshColor1: '#f8fadb',
-    meshColor2: '#cce8b5',
-    meshColor3: '#cce8b5',
-    meshColor4: '#f8fadb'
+    primary: 'rgba(229, 141, 68, 1)',
+    secondary: 'rgba(32, 34, 39, 0.69)',
+    tertiary: 'rgba(206, 217, 216, 1)',
+    textPrimary: 'rgba(11, 20, 31, 1)',
+    textSecondary: 'rgba(73, 78, 83, 1)',
+    textTertiary: 'rgba(153, 153, 153, 1)',
+    textQuaternary: '#5C5C5C',
+    gain: '#3AA67B',
+    loss: '#D76D80',
+
+    textOnPrimary: 'rgba(240, 249, 245, 1)',
+    textOnSecondary: 'rgba(85, 69, 69, 0.6)',
+    textOnTertiary: 'rgba(190, 182, 182, 1)',
+
+    bgPrimary: 'rgba(245, 228, 216, 1)',
+    bgSecondary: 'rgba(53, 68, 70, 0.97)',
+    bgTertiary: 'rgba(217, 217, 217, 1)',
+
+    inactiveSecondary: 'rgba(104, 106, 106, 1)',
+    inactiveTertiary: 'rgba(104, 106, 106, 1)'
   },
   dark: {
-    primary: '#38A598',
+    primary: '#F09642',
     textOnPrimary: '#FFFFFF',
-    hoverLight: '#424a5a',
-    textPrimary: '#FFFFFF',
-    textSecondary: '#FB8450',
-    textTertiary: '#FFFFFF',
-    iconPrimary: '#38A598',
-    iconSecondary: '#FFFFFF',
-    meshColor1: '#232323',
-    meshColor2: '#004d65',
-    meshColor3: '#232323',
-    meshColor4: '#232323'
+    textPrimary: '#D6D6D6',
+    textSecondary: '#7A7A7A',
+    textTertiary: '#666666',
+    textQuaternary: '#5C5C5C',
+    gain: '#3AA67B',
+    loss: '#D76D80',
+
+    bgPrimary: 'rgba(75,72,72,0.56)',
+    bgSecondary: 'rgba(75,72,72,0.3)',
+    bgTertiary: '#E5E7EB',
+
+    inactiveSecondary: 'rgba(104, 106, 106, 1)',
+    inactiveTertiary: 'rgba(104, 106, 106, 1)'
   }
 }
 
@@ -36,6 +47,12 @@ const makePalette = (theme: ThemeTypes) => {
 
   const base = {
     white: '#FFFFFF',
+    black: '#000000',
+    black20: 'rgba(0, 0, 0, 0.2)',
+    black40: 'rgba(0, 0, 0, 0.4)',
+    black50: 'rgba(0, 0, 0, 0.5)',
+    black60: 'rgba(0, 0, 0, 0.6)',
+
     gray100: 'hsl(206, 20%, 98.8%)',
     gray200: 'hsl(206, 14%, 96.0%)',
     gray300: 'hsl(206, 13%, 93.7%)',
@@ -204,7 +221,21 @@ const makePalette = (theme: ThemeTypes) => {
     gold600: 'hsl(41, 41%, 71.4%)',
     gold700: 'hsl(36, 37%, 60.0%)',
     gold800: 'hsl(36, 30%, 52.0%)',
-    gold900: 'hsl(36, 26%, 40.0%)'
+    gold900: 'hsl(36, 26%, 40.0%)',
+
+    warning: '#AF1F42',
+    'profile-title': '#052822',
+    'profile-description': '#6B7D94',
+    'transaction-title': '#676F83',
+    'transaction-description': '#6F6E6D',
+    card: '#494D58',
+    'supreme-container': 'rgba(0, 0, 0, 0.99)',
+    'supreme-card': 'rgba(27, 33, 29, 0.8)',
+    'profile-transaction': 'rgba(73, 78, 83, 1)',
+
+    'status-green': '#79C681',
+    'status-red': '#FE7474',
+    'status-yellow': '#FFC266'
   }
 
   return {

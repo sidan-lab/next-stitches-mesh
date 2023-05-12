@@ -5,7 +5,8 @@
     "paths": {
       "@src/*": ["src/*"],
       "@test/*": ["test/*"],
-      "@styles/*": ["src/styles/*"]
+      "@styles/*": ["src/styles/*"],
+      "@redux/*": ["src/appRedux/*"]
     },
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
