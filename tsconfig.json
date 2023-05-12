@@ -5,6 +5,7 @@
     "paths": {
       "@src/*": ["src/*"],
       "@test/*": ["test/*"],
+      "@assets/*": ["public/*"],
       "@styles/*": ["src/styles/*"],
       "@redux/*": ["src/appRedux/*"]
     },

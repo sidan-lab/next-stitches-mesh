@@ -11,8 +11,8 @@
 
 ## Static Content
 
-- Iterative Content: All iterative content (those would pass in `map` function) should be stored in `@src/assets/StaticContent`
-- Non Iterative Content: Can either be stored in `@src/assets/StaticContent` or hardcoded inside each components.
+- Iterative Content: All iterative content (those would pass in `map` function) should be stored in `@assets/StaticContent`
+- Non Iterative Content: Can either be stored in `@assets/StaticContent` or hardcoded inside each components.
 
 ## UI Component Variants
 
